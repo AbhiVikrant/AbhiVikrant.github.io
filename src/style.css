@@ -1,0 +1,11 @@
+body{
+      margin: 0;
+}
+#body_header{
+      height: 80vh;
+      background-image: url(../Static/body_header_img.webp);
+      opacity: 0.8;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+}

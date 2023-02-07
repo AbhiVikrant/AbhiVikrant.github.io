@@ -25,7 +25,7 @@ body{
 display: inline-block;
 margin: 0 1rem 1rem 0px ;
 padding: 0.5rem;
-font-size: 30px;
+font-size: 2rem;
 font-style: normal;
 font-weight: bold;
 
@@ -66,4 +66,39 @@ image_logo{
       height: 1rem;
       width: 1rem;
       box-shadow: 0 10px 20px 0 rgba(230, 196, 196, 0.3);
+}
+.dp{
+      display: flex;
+      margin-top: -6rem;
+
+}
+.dp img{
+      border-radius: 50% 50%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 200px;
+      width: 200px;
+      justify-content: center;
+      position:relative;
+      border: 10px solid red;
+      border-spacing: 10px;
+      border-left-color: aqua;
+      border-right-color: aquamarine;
+      border-block-start-color: palevioletred;
+
+}
+/* About section */
+.about {
+      box-shadow: 0 10px 20px 0 lightgray;
+      height: auto;
+      width: 100%;
+      position: relative;
+
+}
+.about  p{
+      color: grey;
+}
+.about mark{
+      color:#2857a4;
+      background-color: unset;
 }

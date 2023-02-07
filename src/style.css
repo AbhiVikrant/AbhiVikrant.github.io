@@ -1,11 +1,69 @@
 body{
       margin: 0;
 }
+/* Body header */
 #body_header{
       height: 80vh;
-      background-image: url(../Static/body_header_img.webp);
+      background-image: url(../Static/body_header_img.webp), url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+;
       opacity: 0.8;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      margin-top: -17px;
+}
+/* text align center */
+.text_center{
+      text-align: center;
+}
+/* Nav Bar list */
+.nav_bar_list{
+      list-style: none;
+      padding-left: 0;
+}
+.nav_bar_list li{
+display: inline-block;
+margin: 0 1rem 1rem 0px ;
+padding: 0.5rem;
+font-size: 30px;
+font-style: normal;
+font-weight: bold;
+
+}
+.nav_bar_list li a{
+      text-decoration: none;
+      color: black;
+      transition: color 0.5s, border-bottom 4s;
+}
+.nav_bar_list li a:hover{
+      color: purple;
+      border-bottom: 5px solid whitesmoke;
+
+}
+/* Image title */
+image_logo{
+      margin-top: 12rem;
+
+}
+.name_abhi{
+      text-transform: uppercase;
+      margin-top: 12rem;
+}
+.name_abhi h1{
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.1rem;
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+
+}
+/* social icon */
+#social_icons{
+      margin: 0 0.2rem 0.2rem 0px  ;
+}
+#social_icons img{
+      height: 1rem;
+      width: 1rem;
+      box-shadow: 0 10px 20px 0 rgba(230, 196, 196, 0.3);
 }

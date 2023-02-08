@@ -141,6 +141,7 @@ section-heading {
 /* skills section */
 .skills-display {
   width: 70%;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

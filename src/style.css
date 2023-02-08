@@ -1,104 +1,256 @@
-body{
-      margin: 0;
+body {
+  margin: 0;
 }
 /* Body header */
-#body_header{
-      height: 80vh;
-      background-image: url(../Static/body_header_img.webp), url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
-;
-      opacity: 0.8;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      margin-top: -17px;
+#body_header {
+  height: 80vh;
+  background-image: url(../Static/body_header_img.webp),
+    url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -17px;
 }
 /* text align center */
-.text_center{
-      text-align: center;
+.text_center {
+  text-align: center;
 }
 /* Nav Bar list */
-.nav_bar_list{
-      list-style: none;
-      padding-left: 0;
+.nav_bar_list {
+  list-style: none;
+  padding-left: 0;
 }
-.nav_bar_list li{
-display: inline-block;
-margin: 0 1rem 1rem 0px ;
-padding: 0.5rem;
-font-size: 2rem;
-font-style: normal;
-font-weight: bold;
-
+.nav_bar_list li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0px;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
 }
-.nav_bar_list li a{
-      text-decoration: none;
-      color: black;
-      transition: color 0.5s, border-bottom 4s;
+.nav_bar_list li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s, border-bottom 4s;
 }
-.nav_bar_list li a:hover{
-      color: purple;
-      border-bottom: 5px solid whitesmoke;
-
+.nav_bar_list li a:hover {
+  color: purple;
+  border-bottom: 5px solid whitesmoke;
 }
 /* Image title */
-image_logo{
-      margin-top: 12rem;
-
+image_logo {
+  margin-top: 12rem;
 }
-.name_abhi{
-      text-transform: uppercase;
-      margin-top: 12rem;
+.name_abhi {
+  text-transform: uppercase;
+  margin-top: 12rem;
 }
-.name_abhi h1{
-      font-size: 3rem;
-      font-weight: 900;
-      letter-spacing: 0.1rem;
-      color: white;
-      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-
-
+.name_abhi h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 /* social icon */
-#social_icons{
-      margin: 0 0.2rem 0.2rem 0px  ;
+#social_icons {
+  margin: 0 0.2rem 0.2rem 0px;
 }
-#social_icons img{
-      height: 1rem;
-      width: 1rem;
-      box-shadow: 0 10px 20px 0 rgba(230, 196, 196, 0.3);
+#social_icons img {
+  height: 1rem;
+  width: 1rem;
+  box-shadow: 0 10px 20px 0 rgba(230, 196, 196, 0.3);
 }
-.dp{
-      display: flex;
-      margin-top: -6rem;
+.dp {
+  display: flex;
+  margin-top: -6rem;
+}
+.dp img {
+  border-radius: 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  position: relative;
+  border: 10px solid red;
+  border-spacing: 10px;
+  border-left-color: aqua;
+  border-right-color: aquamarine;
+  border-block-start-color: palevioletred;
+}
+/* section common css */
+section {
+  width: 100%;
+  /*height: 75vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+section:nth-child(2n) {
+  background-color: #9e9b9b29;
 }
-.dp img{
-      border-radius: 50% 50%;
-      margin-left: auto;
-      margin-right: auto;
-      height: 200px;
-      width: 200px;
-      justify-content: center;
-      position:relative;
-      border: 10px solid red;
-      border-spacing: 10px;
-      border-left-color: aqua;
-      border-right-color: aquamarine;
-      border-block-start-color: palevioletred;
 
+section:nth-child(2n + 1) {
+  background-color: white;
 }
+
 /* About section */
 .about {
-      box-shadow: 0 10px 20px 0 lightgray;
-      height: auto;
-      width: 100%;
-      position: relative;
+  box-shadow: 0 10px 20px 0 lightgray;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.about p {
+  color: grey;
+}
+.about mark {
+  color: #2857a4;
+  background-color: unset;
+}
+/* section heading */
+section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: 400;
+}
+
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+/* common margin for section */
+.mb75px {
+  margin-bottom: 75px;
+}
+
+/*common color classes */
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+}
+
+/* skills section */
+.skills-display {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill-progress {
+  width: 10rem;
+  height: 1.5rem;
+  background-color: lightgrey;
+  border-radius: 0.8rem;
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  align-content: center;
+}
+/* for showing value after progress bar */
+.per-value {
+  border: unset;
+  width: 4rem;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+.per-value span {
+  color: #2857a4;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/* CSS for portfolio  */
+#portfolio_start {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio-img-container {
+  height: 300px;
+  width: 400px;
+  margin: 1rem;
+  background-color: green;
+  border-radius: 5px;
 
 }
-.about  p{
-      color: grey;
+ .portfolio-img-container>div{
+      height: 300px;
+      position: relative;
+      width: 400px;
 }
-.about mark{
-      color:#2857a4;
-      background-color: unset;
+.portfolio-image-1 {
+  background-image: url(../Static/ab.png);
+  /* background-size: contain; */
+   /* object-fit: contain; */
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.portfolio-image-2 {
+}
+.portfolio-image-3 {
+}
+.portfolio-image-4 {
+}
+
+/* percentage class */
+.eighty-five {
+  width: 85%;
+  height: inherit;
+}
+.fourty-five {
+  width: 45%;
+  height: inherit;
+}
+.ninety {
+  width: 90%;
+  height: inherit;
+}
+.sixty-five {
+  width: 65%;
+  height: inherit;
+}
+.seventy-five {
+  height: inherit;
+  width: 75%;
+}
+.eighty {
+  width: 80%;
+  height: inherit;
+}
+.fourty {
+  width: 40%;
+  height: inherit;
+}
+.fourty-five {
+  width: 45%;
+  height: inherit;
+}
+.twenty {
+  width: 20%;
+  height: inherit;
+}
+/* color classes */
+.mb-blue {
+  background-color: #2857a4;
 }

@@ -39,8 +39,9 @@ body {
   border-bottom: 5px solid whitesmoke;
 }
 /* Image title */
-image_logo {
-  margin-top: 12rem;
+.image_logo {
+  position: relative;
+  top: -10rem;
 }
 .name_abhi {
   text-transform: uppercase;
@@ -187,23 +188,70 @@ section-heading {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.portfolio-img-container  {
+.portfolio-img-container {
+  position: relative;
   height: 300px;
   width: 400px;
   margin: 1rem;
   background-color: green;
   border-radius: 10px;
   flex-grow: 1;
-
 }
-.portfolio-img-container img{
+.portfolio-img-container img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
+.portfolio-img-container:hover {
+  cursor: pointer;
+}
+.img-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+.portfolio-img-container:hover .img-text {
+  opacity: .9;
+  visibility: visible;
+}
+.img-text p {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  font-size: medium;
+  font-weight: 600;
+  color: #2857a4;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.img-text button {
+  position: absolute;
+  left: 40%;
+  bottom: 15%;
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid black;
+  text-shadow: 5px 5px blueviolet;
+}
+.img-text button > a {
+  text-decoration: none;
+  color: white;
 
-
-
+  text-align: center;
+  font-size: medium;
+  font-weight: 600;
+}
 
 /* percentage class */
 .eighty-five {

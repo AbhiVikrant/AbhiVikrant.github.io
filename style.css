@@ -11,6 +11,10 @@ font-size: 8px;
 #body_header {
   height: 30vh !important;
 }
+.img-text button{
+  left: 37% !important;
+  bottom: 7% !important;
+}
 }
 
 /* Body header */

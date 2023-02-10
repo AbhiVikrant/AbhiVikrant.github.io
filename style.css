@@ -1,25 +1,44 @@
 body {
   margin: 0;
 }
+
 @media screen and (max-width: 699px) {
 
-* {
+  * {
 
-font-size: 8px;
+    font-size: 8px;
+
+  }
+
+  #body_header {
+    height: 40vh !important;
+  }
+
+  .img-text button {
+    left: 37% !important;
+    bottom: 7% !important;
+  }
+
+  .nav_bar_list li {
+    margin: 0 0.5rem 0.5rem 0px !important;
+    padding: 0.5rem !important;
+
+  }
+  .contact-body input{
+    height: 8rem !important;
+    width: 100% !important;
+  }
+  .contact-body button{
+    width: auto !important;
+  }
+  #contact {
+
+  height:auto;
+
+
 
 }
-#body_header {
-  height: 40vh !important;
-}
-.img-text button{
-  left: 37% !important;
-  bottom: 7% !important;
-}
-.nav_bar_list li {
-  margin: 0 0.5rem 0.5rem 0px !important;
-  padding: 0.5rem !important;
 
-}
 
 }
 
@@ -34,15 +53,18 @@ font-size: 8px;
   background-attachment: fixed;
   margin-top: -17px;
 }
+
 /* text align center */
 .text_center {
   text-align: center;
 }
+
 /* Nav Bar list */
 .nav_bar_list {
   list-style: none;
   padding-left: 0;
 }
+
 .nav_bar_list li {
   display: inline-block;
   margin: 0 1rem 1rem 0px;
@@ -51,24 +73,29 @@ font-size: 8px;
   font-style: normal;
   font-weight: bold;
 }
+
 .nav_bar_list li a {
   text-decoration: none;
   color: black;
   transition: color 0.5s, border-bottom 4s;
 }
+
 .nav_bar_list li a:hover {
   color: purple;
   border-bottom: 5px solid whitesmoke;
 }
+
 /* Image title */
 .image_logo {
   position: relative;
   top: -10rem;
 }
+
 .name_abhi {
   text-transform: uppercase;
   margin-top: 12rem;
 }
+
 .name_abhi h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -76,19 +103,23 @@ font-size: 8px;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
+
 /* social icon */
 #social_icons {
   margin: 0 0.2rem 0.2rem 0px;
 }
+
 #social_icons img {
   height: 1rem;
   width: 1rem;
   box-shadow: 0 10px 20px 0 rgba(230, 196, 196, 0.3);
 }
+
 .dp {
   display: flex;
   margin-top: -6rem;
 }
+
 .dp img {
   border-radius: 50% 50%;
   margin-left: auto;
@@ -103,6 +134,7 @@ font-size: 8px;
   border-right-color: aquamarine;
   border-block-start-color: palevioletred;
 }
+
 /* section common css */
 section {
   width: 100%;
@@ -127,13 +159,16 @@ section:nth-child(2n + 1) {
   width: 100%;
   position: relative;
 }
+
 .about p {
   color: grey;
 }
+
 .about mark {
   color: #2857a4;
   background-color: unset;
 }
+
 /* section heading */
 section-heading {
   width: auto;
@@ -149,6 +184,7 @@ section-heading {
   margin-right: 0.5rem;
   text-transform: uppercase;
 }
+
 /* common margin for section */
 .mb75px {
   margin-bottom: 75px;
@@ -170,6 +206,7 @@ section-heading {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .skill-progress {
   width: 10rem;
   height: 1.5rem;
@@ -179,7 +216,7 @@ section-heading {
   flex-grow: 1;
 }
 
-.skill-progress > div {
+.skill-progress>div {
   border-radius: 20px 0px 0px 20px;
 }
 
@@ -189,6 +226,7 @@ section-heading {
   margin-left: 10px;
   align-content: center;
 }
+
 /* for showing value after progress bar */
 .per-value {
   border: unset;
@@ -197,11 +235,13 @@ section-heading {
   margin-left: auto;
   margin-right: auto;
 }
+
 .per-value span {
   color: #2857a4;
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 /* CSS for portfolio  */
 #portfolio_start {
   width: 90%;
@@ -210,6 +250,7 @@ section-heading {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .portfolio-img-container {
   position: relative;
   height: 300px;
@@ -219,14 +260,17 @@ section-heading {
   border-radius: 10px;
   flex-grow: 1;
 }
+
 .portfolio-img-container img {
   height: 100%;
   width: 100%;
   border-radius: 10px;
 }
+
 .portfolio-img-container:hover {
   cursor: pointer;
 }
+
 .img-text {
   position: absolute;
   height: 100%;
@@ -240,10 +284,12 @@ section-heading {
   opacity: 0;
   visibility: hidden;
 }
+
 .portfolio-img-container:hover .img-text {
   opacity: .9;
   visibility: visible;
 }
+
 .img-text p {
   display: inline-block;
   position: absolute;
@@ -257,6 +303,7 @@ section-heading {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .img-text button {
   display: flex;
   position: absolute;
@@ -267,7 +314,8 @@ section-heading {
   border: 1px solid black;
   text-shadow: 5px 5px blueviolet;
 }
-.img-text button > a {
+
+.img-text button>a {
   text-decoration: none;
   color: white;
 
@@ -281,39 +329,126 @@ section-heading {
   width: 85%;
   height: inherit;
 }
+
 .fourty-five {
   width: 45%;
   height: inherit;
 }
+
 .ninety {
   width: 90%;
   height: inherit;
 }
+
 .sixty-five {
   width: 65%;
   height: inherit;
 }
+
 .seventy-five {
   height: inherit;
   width: 75%;
 }
+
 .eighty {
   width: 80%;
   height: inherit;
 }
+
 .fourty {
   width: 40%;
   height: inherit;
 }
+
 .fourty-five {
   width: 45%;
   height: inherit;
 }
+
 .twenty {
   width: 20%;
   height: inherit;
 }
+
 /* color classes */
 .mb-blue {
   background-color: #2857a4;
+}
+
+/* Contact section */
+#contact {
+  background: linear-gradient(90deg, #2857a4, #403066);
+  height: 600px;
+  position: relative;
+
+
+}
+
+#contact .section-heading>span {
+  color: white;
+}
+#contact-content{
+   display: inline-block;
+}
+.contact-body {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  margin: -490px 3rem 3rem 7rem;
+  padding: 10px;
+}
+
+.contact-body input {
+  width: 30vw;
+  height: 3rem;
+  margin: 1rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-bottom-color: white;
+  background: none;
+  color: white;
+  font-size: 15px;
+
+}
+
+.contact-body input:focus {
+  outline: none;
+}
+
+.contact-body button {
+  background: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid white;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  width: 12rem;
+  text-align: center;
+  align-self: center;
+}
+.second_contact_section{
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  margin: -490px 3rem 3rem 7rem;
+  padding: 10px;
+  left: 40rem;
+  color: white;
+
+}
+.second_contact_section span{
+  color: grey;
+  padding: 5px;
+
+}
+.second_contact_section span>i{
+  margin-right: 5px;
+}
+footer{
+  position: absolute;
+  left: -80%;
+  bottom: -30%;
 }

@@ -1,6 +1,18 @@
 body {
   margin: 0;
 }
+@media screen and (max-width: 699px) {
+
+* {
+
+font-size: 8px;
+
+}
+#body_header {
+  height: 30vh !important;
+}
+}
+
 /* Body header */
 #body_header {
   height: 80vh;
@@ -236,6 +248,7 @@ section-heading {
   margin-right: 1rem;
 }
 .img-text button {
+  display: flex;
   position: absolute;
   left: 40%;
   bottom: 15%;

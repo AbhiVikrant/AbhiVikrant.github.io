@@ -15,6 +15,12 @@ font-size: 8px;
   left: 37% !important;
   bottom: 7% !important;
 }
+.nav_bar_list li {
+  margin: 0 0.5rem 0.5rem 0px !important;
+  padding: 0.5rem !important;
+
+}
+
 }
 
 /* Body header */

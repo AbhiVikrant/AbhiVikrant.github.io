@@ -616,10 +616,13 @@ position:relative
 /* Learning path */
 .timeline-box-1{
   position:relative;
-  min-height: 100px;
+  min-height: 50px;
   width:40%;
   /* border:2px solid red; */
   margin:5px;
   left:5%;
+}
+.timeline-box-1:nth-child(2n){
+  left: 54%;
 }
 
